@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  welcomeMsg = this.transformText('Hi I\'m Digender R. Mahara');
+  welcomeMsg = this.transformText(`Hi I\'m Digender R. Mahara`);
   professionMsg = this.transformText('Full Stack Node JS Developer');
   welcome = '';
   profession = '';
@@ -30,7 +30,6 @@ export class HomeComponent implements OnInit {
     let count2 = 0;
     let interval1: any = setInterval(() => {
       this.welcome = `${this.welcome}${this.welcomeMsg[count1]}`;
-      console.log(this.welcome);
       count1++;
       if (interval1 && count1 === this.welcomeMsg.length) {
         clearInterval(interval1);
@@ -39,10 +38,8 @@ export class HomeComponent implements OnInit {
     }, 200);
 
     let interval2: any = setInterval(() => {
-      console.log(interval1);
       if (!interval1 && interval2) {
         this.profession = `${this.profession}${this.professionMsg[count2]}`;
-        console.log(this.profession);
         count2++;
         if (interval2 && count2 === this.professionMsg.length) {
           clearInterval(interval2);
