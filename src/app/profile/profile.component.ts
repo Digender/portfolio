@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UtilService } from '../shared/services/util.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  yearsOfExperience: string = '6+';
+  constructor(private utilService: UtilService) { }
 
   ngOnInit(): void {
+    this.yearsOfExperience = this.utilService.getExperienceYears();
   }
 
 }

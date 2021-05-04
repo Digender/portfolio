@@ -1,6 +1,7 @@
 .home {
-  background-color: #111;
-  color: #dfdfdf;
+  background-color: #f7f4f2;
+  color: #334;
+  font-weight: bold;
   display: flex;
   flex-direction: row;
 
@@ -11,5 +12,18 @@
 
   .menu {
     flex: 1;
+    display: flex;
+    border-right: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    .img-holder {
+      margin-right: -12px;
+      border-right: 10px solid #ddd;
+      width: 100%;
+    }
+    img {
+      border-radius: 50%;
+      width: 200px;
+    }
   }
 }

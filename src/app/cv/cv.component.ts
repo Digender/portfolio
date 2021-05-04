@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UtilService } from '../shared/services/util.service';
 
 @Component({
   selector: 'app-cv',
@@ -7,13 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvComponent implements OnInit {
 
-  yearsOfExperience: string = '0';
-  constructor() { }
+  yearsOfExperience: string = '6+';
+  constructor(private utilService: UtilService) { }
 
   ngOnInit() {
-    const currDate = new Date();
-    const currentYear = currDate.getFullYear();
-    const month = currDate.getMonth() + 1;
-    this.yearsOfExperience = `${(currentYear - 2015)}.${month}`;
+    this.yearsOfExperience = this.utilService.getExperienceYears();
   }
 }

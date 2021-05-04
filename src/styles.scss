@@ -8,8 +8,14 @@ body, html {
 
 app-root {
   background: #fff;
-  font-family: 'Raleway', sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
   background-color: #111;
+}
+
+.info {
+  h1 {
+    font-family: "IvyMode Reg", sans-serif
+  }
 }
 
 .m-l-xs {
@@ -55,3 +61,25 @@ ul {
   border: 1px solid #bbb;
   background: #fff;
 }
+
+/* This CSS resource incorporates links to font software which is the
+   valuable copyrighted property of Type Network, Inc. and/or their
+   suppliers. You may not attempt to copy, install, redistribute,
+   convert, modify or reverse engineer this font software. Please
+   contact Type Network with any questions: www.typenetwork.com */
+
+
+
+
+   @font-face {
+    font-family: "IvyMode Reg";
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+
+    src: url("//cloud.typenetwork.com/projectLicenseWeb/16168/fontfile/eot/?5a135b4562e0c910f47b003d9f53c360cacf05b7");
+          src: url("//cloud.typenetwork.com/projectLicenseWeb/16168/fontfile/eot/?5a135b4562e0c910f47b003d9f53c360cacf05b7#iefix") format("embedded-opentype"),
+               url("//cloud.typenetwork.com/projectLicenseWeb/16168/fontfile/woff2/?5a135b4562e0c910f47b003d9f53c360cacf05b7") format("woff2"),
+               url("//cloud.typenetwork.com/projectLicenseWeb/16168/fontfile/woff/?5a135b4562e0c910f47b003d9f53c360cacf05b7") format("woff");
+
+  }

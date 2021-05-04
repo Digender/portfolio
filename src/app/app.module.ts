@@ -12,6 +12,7 @@ import { TodoComponent } from './todo/todo.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './profile/profile.component';
 import { MenuComponent } from './menu/menu.component';
+import { UtilService } from './shared/services/util.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { MenuComponent } from './menu/menu.component';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [UtilService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
