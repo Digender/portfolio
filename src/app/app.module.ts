@@ -9,6 +9,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { ContactComponent } from './contact/contact.component';
 import { TodoComponent } from './todo/todo.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProfileComponent } from './profile/profile.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { TodoComponent } from './todo/todo.component';
     PageNotFoundComponent,
     BookmarkComponent,
     ContactComponent,
-    TodoComponent
+    TodoComponent,
+    ProfileComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
