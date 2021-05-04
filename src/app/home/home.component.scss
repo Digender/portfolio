@@ -10,7 +10,7 @@
     height: 100vh;
   }
 
-  .menu {
+  .sidebar {
     flex: 1;
     display: flex;
     border-right: 1px solid #ccc;
@@ -24,6 +24,23 @@
     img {
       border-radius: 50%;
       width: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .sidebar {
+      display: none;
+      img {
+        border-radius: 50%;
+        width: 100px;
+      }
+    }
+
+    .display {
+      display: flex;
+      align-items: center;
+      text-align: center;;
+      height: 100vh;
     }
   }
 }

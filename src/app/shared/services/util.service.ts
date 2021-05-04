@@ -11,6 +11,6 @@ export class UtilService {
     const currDate = new Date();
     const currentYear = currDate.getFullYear();
     const month = currDate.getMonth() + 1;
-    return `${(currentYear - 2015)}.${month}`
+    return `${(currentYear - 2015)}.${month}`;
   }
 }
