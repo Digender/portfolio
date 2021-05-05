@@ -16,31 +16,33 @@
     border-right: 1px solid #ccc;
     justify-content: center;
     align-items: center;
-    .img-holder {
-      margin-right: -12px;
-      border-right: 10px solid #ddd;
-      width: 100%;
-    }
-    img {
-      border-radius: 50%;
-      width: 200px;
-    }
+    height: 100vh;
   }
 
-  @media only screen and (max-width: 640px) {
-    .sidebar {
-      display: none;
-      img {
-        border-radius: 50%;
-        width: 100px;
-      }
-    }
-
-    .display {
-      display: flex;
-      align-items: center;
-      text-align: center;;
-      height: 100vh;
-    }
+  .img-holder {
+    margin-right: -12px;
+    border-right: 10px solid #ddd;
+    width: 100%;
   }
+  img {
+    border-radius: 50%;
+    width: 200px;
+  }
+
+  // @media only screen and (max-width: 640px) {
+  //   .sidebar {
+  //     display: none;
+  //     img {
+  //       border-radius: 50%;
+  //       width: 100px;
+  //     }
+  //   }
+
+  //   .display {
+  //     display: flex;
+  //     align-items: center;
+  //     text-align: center;;
+  //     height: 100vh;
+  //   }
+  // }
 }
