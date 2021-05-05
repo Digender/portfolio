@@ -29,20 +29,20 @@
     width: 200px;
   }
 
-  // @media only screen and (max-width: 640px) {
-  //   .sidebar {
-  //     display: none;
-  //     img {
-  //       border-radius: 50%;
-  //       width: 100px;
-  //     }
-  //   }
+  @media only screen and (max-width: 640px) {
+    .sidebar {
+      display: none;
+      img {
+        border-radius: 50%;
+        width: 100px;
+      }
+    }
 
-  //   .display {
-  //     display: flex;
-  //     align-items: center;
-  //     text-align: center;;
-  //     height: 100vh;
-  //   }
-  // }
+    .display {
+      display: flex;
+      align-items: center;
+      text-align: center;;
+      height: 100vh;
+    }
+  }
 }
