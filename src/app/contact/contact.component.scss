@@ -1,0 +1,19 @@
+.first-grid {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 100px);
+  background-color: aqua;
+  // grid-gap: 1em;
+
+  justify-content: center;
+  align-content: spa;
+
+  width: 100%;;
+
+  .grid-items {
+    background-color: #222;
+    color: white;
+    border: 1px solid #fdfdfd;
+    width: 50px;
+    justify-self: center;
+  }
+}
